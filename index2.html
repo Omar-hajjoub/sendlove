@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css"/>
+</head>
+<body>
+
+  
+
+
+    <div class="textlo">
+        <p>Hurrayy</p>
+        <P>Where do you like to go out? </P>
+    
+        <img src="./photo/200w (3).webp" alt="">
+      </div>
+
+      <div class="tabl">
+
+        <div class="card">
+            <h2>Park</h2>
+            <img src="./photo/200.webp" alt="" onclick="getms()">
+            
+
+        </div>
+        
+        <div class="card">
+            <h2>Special dinner</h2>
+            <img src="./photo/200w (1).webp" alt="" onclick="getms()">
+            
+
+        </div>
+        
+        <div class="card">
+            <h2>my home</h2>
+            <img src="./photo/200w (2).webp" alt="" onclick="getms()">
+            
+
+        </div>
+        
+        <div class="card">
+            <h2>In front of the sea</h2>
+            <img src="./photo/200w.webp" alt="" onclick="getms()">
+            
+
+        </div>
+      </div>
+
+      
+    <div class="cardtext">
+        <div class="ptx">
+        <P>Send Message Wahtssap  </P>
+     <a href=""><i onmouseover="wtsa()"  class="fa-brands fa-whatsapp fa-shake fa-2xl" style="color: #63E6BE;"></i></a>   
+    </div>
+        <img id="imgq" src="./photo/200w (4).webp" alt="">
+        <img id="noclose" src="./photo/giphy (2).gif" alt="">
+
+        <i onmouseover="closemt()" id="close" class="fa-solid fa-xmark fa-2xl" style="color: #FFD43B;"></i>
+      </div>
+
+
+
+
+
+
+
+
+<script>
+
+    function getms(){
+
+        document.querySelector('.cardtext').style.top='60px'
+        
+    }
+
+    const closem=document.getElementById('close')
+ clos=false
+    function closemt(){
+
+        document.getElementById('imgq').style.display='none'
+        document.getElementById('noclose').style.display='inline-block'
+
+    }
+    function wtsa(){
+
+        document.getElementById('noclose').style.display='none'
+        document.getElementById('imgq').style.display='inline-block'
+
+    }
+
+</script>
+</body>
+</html>
